@@ -12,7 +12,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 plugins = {
-    { 'phaazon/hop.nvim' },
     {
       "christoomey/vim-tmux-navigator",
       cmd = {
@@ -61,7 +60,23 @@ plugins = {
        tag = '0.1.6',
        dependencies = { 'nvim-lua/plenary.nvim' }
     },
-    { 'jose-elias-alvarez/null-ls.nvim' }
+    { 'jose-elias-alvarez/null-ls.nvim' },
+    { 'windwp/nvim-autopairs'},
+    { 'terrortylor/nvim-comment' },
+    { 'akinsho/toggleterm.nvim'},
+    { 'hedyhli/outline.nvim',
+      keys = {
+          {"<leader>o", "<Cmd>Outline<CR>", desc = "ToggleOutline"}
+      }
+    },
+    { 'nvim-lualine/lualine.nvim',
+      dependencies = { 'nvim-tree/nvim-web-devicons' }
+    },
+    { 'akinsho/bufferline.nvim',
+      dependencies = {'nvim-tree/nvim-web-devicons'}
+    },
+    { 'lewis6991/gitsigns.nvim' },
+    { 'rmagatti/auto-session' }
 }
 
 opts = {}

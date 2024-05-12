@@ -68,3 +68,6 @@
   require('lspconfig')['clangd'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['pylsp'].setup {
+    capabilities = capabilities
+  }

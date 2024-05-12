@@ -25,7 +25,12 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- Clipboard
-vim.opt.clipboard = ""
+--vim.opt.clipboard = ""
+vim.keymap.set("n", "<leader>y", "\"+y")
+vim.keymap.set("v", "<leader>y", "\"+y")
+vim.keymap.set("n", "<leader>Y", "\"+Y")
+
+vim.keymap.set("n", "<leader>p", "\"+p")
 
 -- Shorter messages
 vim.opt.shortmess:append("c")
