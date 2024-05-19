@@ -16,7 +16,7 @@ vim.keymap.set('n', '<leader>o', ':Outline<CR>')
 
 --DiffView
 vim.keymap.set('n', '<leader>dv', ':DiffviewOpen<CR>')
-vim.keymap.set('n', '<leader>dc', ':DiffviewCle<CR>')
+vim.keymap.set('n', '<leader>dc', ':DiffviewCloseCR>')
 
 --BufferLine
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
