@@ -64,11 +64,7 @@ plugins = {
     { 'windwp/nvim-autopairs'},
     { 'terrortylor/nvim-comment' },
     { 'akinsho/toggleterm.nvim'},
-    { 'hedyhli/outline.nvim',
-      keys = {
-          {"<leader>o", "<Cmd>Outline<CR>", desc = "ToggleOutline"}
-      }
-    },
+    { 'hedyhli/outline.nvim' },
     { 'nvim-lualine/lualine.nvim',
       dependencies = { 'nvim-tree/nvim-web-devicons' }
     },
@@ -76,7 +72,8 @@ plugins = {
       dependencies = {'nvim-tree/nvim-web-devicons'}
     },
     { 'lewis6991/gitsigns.nvim' },
-    { 'rmagatti/auto-session' }
+    { 'rmagatti/auto-session' },
+    { 'sindrets/diffview.nvim' },
 }
 
 opts = {}
