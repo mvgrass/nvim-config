@@ -66,7 +66,10 @@
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
   require('lspconfig')['clangd'].setup {
-    capabilities = capabilities
+    capabilities = capabilities,
+    init_options = {
+        fallbackFlags = {'--std=c++23'}
+    },
   }
   require('lspconfig')['pylsp'].setup {
     capabilities = capabilities
