@@ -74,3 +74,6 @@
   require('lspconfig')['pylsp'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['cmake'].setup {
+    capabilities = capabilities
+  }
