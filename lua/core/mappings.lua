@@ -24,3 +24,7 @@ vim.keymap.set('n', '<s-Tab>', ':BufferLineCyclePrev<CR>')
 vim.keymap.set('n', '<leader>x', ':BufferLinePickClose<CR>')
 vim.keymap.set('n', '<leader>gt', ':BufferLinePick<CR>')
 
+--DAP
+vim.keymap.set('n', '<leader>db', ':DapToggleBreakpoint<CR>')
+vim.keymap.set('n', '<leader>dr', ':DapContinue<CR>')
+

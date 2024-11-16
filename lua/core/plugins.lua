@@ -45,7 +45,10 @@ plugins = {
        opts = {
          ensure_intalled = {
            "clangd",
-           "clang-foramt"
+           "clang-foramt",
+           "codelldb",
+           "debugpy",
+           "delve"
          }
        }
     },
@@ -75,6 +78,16 @@ plugins = {
     { 'lewis6991/gitsigns.nvim' },
     { 'rmagatti/auto-session' },
     { 'sindrets/diffview.nvim' },
+    { 'ThePrimeagen/vim-be-good'},
+    { 'mfussenegger/nvim-dap' },
+    { 'jay-babu/mason-nvim-dap.nvim',
+       opts={
+           handlers={}
+       }
+    },
+    { 'rcarriga/nvim-dap-ui',
+      dependencies = { 'nvim-neotest/nvim-nio'}
+    }
 }
 
 opts = {}

@@ -71,6 +71,9 @@
         fallbackFlags = {'--std=c++23'}
     },
   }
+  require('lspconfig')['gopls'].setup{
+    capabilities = capabilities 
+  }
   require('lspconfig')['pylsp'].setup {
     capabilities = capabilities
   }
